@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "specdeck",
+  "version": "0.1.3",
+  "description": "Connects your coding agent to a SpecDeck workspace: the SpecDeck MCP server, plus skills that onboard a codebase into specifications, plan the build and install the SpecDeck working instructions in AGENTS.md.",
+  "author": {
+    "name": "Sensible AB",
+    "email": "hello@specdeck.ai",
+    "url": "https://specdeck.ai"
+  },
+  "homepage": "https://specdeck.ai/docs/mcp-server/",
+  "repository": "https://github.com/specdeck/skills",
+  "keywords": ["specdeck", "specifications", "specs", "mcp", "goals"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "SpecDeck",
+        "shortDescription": "Build from SpecDeck specs: onboard a codebase, plan the build, work through goals.",
+        "longDescription": "SpecDeck holds what to build and decides when work is done. This plugin connects Codex to your SpecDeck workspace through the SpecDeck MCP server, so Codex can claim goals, read the specifications behind them, record its branch and pull request, and submit the work for review. Three skills run the SpecDeck workflows: onboard the codebase into specifications, plan the build from the specifications that are ready, and install the SpecDeck working instructions in AGENTS.md.",
+        "developerName": "Sensible AB",
+        "category": "Productivity",
+        "websiteURL": "https://specdeck.ai",
+        "privacyPolicyURL": "https://specdeck.ai/privacy/",
+        "termsOfServiceURL": "https://specdeck.ai/terms/",
+        "brandColor": "#14b8a6",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}
